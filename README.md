@@ -2,6 +2,10 @@
 ### Introduction
 This Data Analysis and EDA Report Generator uses Generative AI to help data analysts and business professionals quickly generate insightful EDA and data analysis reports from csv files, streamlining the process of extracting valuable insights from raw data.
 
+### Demo
+
+![image](https://github.com/user-attachments/assets/ad60f315-b766-4e4f-9b30-ad11abd1a75c)
+
 ### Generative AI
 
 #### LangChain
