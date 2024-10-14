@@ -1,0 +1,256 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+<!--    <title>Data Analysis Report Generator</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <div class="container mt-5">-->
+<!--        <h2 class="text-center">AI-Powered Data Analysis Report Generator</h2>-->
+<!--        <form method="POST" enctype="multipart/form-data" class="mt-4">-->
+<!--            <div class="form-group">-->
+<!--                <label for="file">Upload CSV File:</label>-->
+<!--                <input type="file" class="form-control-file" id="file" name="file" accept=".csv" required>-->
+<!--            </div>-->
+<!--            <button type="submit" class="btn btn-primary">Generate Report</button>-->
+<!--        </form>-->
+
+<!--        {% if report %}-->
+<!--            <div class="mt-4">-->
+<!--                <h4>Generated Report</h4>-->
+<!--                <pre class="border p-3">{{ report }}</pre>-->
+<!--            </div>-->
+<!--        {% endif %}-->
+
+<!--        {% if error %}-->
+<!--            <div class="alert alert-danger mt-4">-->
+<!--                {{ error }}-->
+<!--            </div>-->
+<!--        {% endif %}-->
+<!--    </div>-->
+
+<!--    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>-->
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+<!--    <title>Data Analysis Report Generator</title>-->
+<!--    <style>-->
+<!--        body {-->
+<!--            background-image: url('/static/images/background.jpg'); /* Use local image */-->
+<!--            background-size: cover;-->
+<!--            background-position: center;-->
+<!--            color: white;-->
+<!--        }-->
+<!--        .container {-->
+<!--            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */-->
+<!--            padding: 30px;-->
+<!--            border-radius: 10px;-->
+<!--            margin-top: 50px;-->
+<!--        }-->
+<!--        h2, h4 {-->
+<!--            text-align: center;-->
+<!--        }-->
+<!--        .card {-->
+<!--            background-color: rgba(255, 255, 255, 0.8); /* Light background for output */-->
+<!--            color: black; /* Dark text color */-->
+<!--            padding: 15px;-->
+<!--            border-radius: 5px;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <div class="container mt-5">-->
+<!--        <h2 class="text-center">AI-Powered Data Analysis Report Generator</h2>-->
+<!--        <form method="POST" enctype="multipart/form-data" class="mt-4">-->
+<!--            <div class="form-group">-->
+<!--                <label for="file">Upload CSV File:</label>-->
+<!--                <input type="file" class="form-control-file" id="file" name="file" accept=".csv" required>-->
+<!--            </div>-->
+<!--            <div class="form-group text-center">-->
+<!--                <button type="submit" class="btn btn-primary">Generate Report</button>-->
+<!--            </div>-->
+<!--        </form>-->
+
+<!--        {% if report %}-->
+<!--            <div class="mt-4">-->
+<!--                <h4>Generated Report</h4>-->
+<!--                <div class="card">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Analysis Result</h5>-->
+<!--                        <p class="card-text">{{ report }}</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        {% endif %}-->
+
+<!--        {% if error %}-->
+<!--            <div class="alert alert-danger mt-4">-->
+<!--                {{ error }}-->
+<!--            </div>-->
+<!--        {% endif %}-->
+<!--    </div>-->
+
+<!--    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>-->
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+<!--    <title>Data Analysis Report Generator</title>-->
+<!--    <style>-->
+<!--        body {-->
+<!--            background-image: url('/static/images/background.jpg');-->
+<!--            background-size: cover;-->
+<!--            background-position: center;-->
+<!--            color: white;-->
+<!--        }-->
+<!--        .container {-->
+<!--            background-color: rgba(0, 0, 0, 0.7);-->
+<!--            padding: 30px;-->
+<!--            border-radius: 10px;-->
+<!--            margin-top: 50px;-->
+<!--        }-->
+<!--        h2, h4 {-->
+<!--            text-align: center;-->
+<!--        }-->
+<!--        .card {-->
+<!--            background-color: rgba(255, 255, 255, 0.8);-->
+<!--            color: black;-->
+<!--            padding: 15px;-->
+<!--            border-radius: 5px;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <div class="container mt-5">-->
+<!--        <h2 class="text-center">AI-Powered Data Analysis Report Generator</h2>-->
+<!--        <form method="POST" enctype="multipart/form-data" class="mt-4">-->
+<!--            <div class="form-group">-->
+<!--                <label for="file">Upload CSV File:</label>-->
+<!--                <input type="file" class="form-control-file" id="file" name="file" accept=".csv" required>-->
+<!--            </div>-->
+<!--            <div class="form-group text-center">-->
+<!--                <button type="submit" class="btn btn-primary">Generate Report</button>-->
+<!--            </div>-->
+<!--        </form>-->
+
+<!--        {% if report %}-->
+<!--            <div class="mt-4">-->
+<!--                <h4>Generated Report</h4>-->
+<!--                <div class="card">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Analysis Result</h5>-->
+<!--                        <div class="card-text">{{ report | safe }}</div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        {% endif %}-->
+
+<!--        {% if error %}-->
+<!--            <div class="alert alert-danger mt-4">-->
+<!--                {{ error }}-->
+<!--            </div>-->
+<!--        {% endif %}-->
+<!--    </div>-->
+
+<!--    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>-->
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Data Analysis Report Generator</title>
+    <style>
+        body {
+            background-image: url('/static/images/background.jpg'); /* Adjust to your local image path */
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        h2, h4 {
+            text-align: center;
+        }
+        .report-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: black;
+            padding: 15px;
+            border-radius: 5px;
+            max-height: 400px; /* Set a max height */
+            overflow-y: auto; /* Enable scrolling if content exceeds height */
+        }
+        .report-text {
+            white-space: pre-wrap; /* Preserve white spaces and line breaks */
+            background-color: #f8f9fa; /* Light grey background */
+            border: 1px solid #ced4da; /* Light border */
+            border-radius: 0.25rem; /* Rounded corners */
+            padding: 1rem; /* Padding around the text */
+            white-space: pre-wrap; /* Preserve white spaces */
+            overflow-wrap: break-word; /* Break long words */
+            font-family: monospace; /* Monospace font for code-like appearance */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">AI-Powered Data Analysis Report Generator</h2>
+        <form method="POST" enctype="multipart/form-data" class="mt-4">
+            <div class="form-group">
+                <label for="file">Upload CSV File:</label>
+                <input type="file" class="form-control-file" id="file" name="file" accept=".csv" required>
+            </div>
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary">Generate Report</button>
+            </div>
+        </form>
+
+        {% if report %}
+            <div class="mt-4">
+                <h4>Generated Report</h4>
+                <div class="report-container">
+                    <div class="report-text">{{ report | safe }}</div>
+                </div>
+            </div>
+        {% endif %}
+
+        {% if error %}
+            <div class="alert alert-danger mt-4">
+                {{ error }}
+            </div>
+        {% endif %}
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

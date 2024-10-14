@@ -1,0 +1,7 @@
+flask
+chromadb
+pandas
+numpy
+langchain
+langchain_groq
+python-dotenv
