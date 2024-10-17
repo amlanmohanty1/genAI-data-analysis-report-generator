@@ -21,8 +21,8 @@ def generate_report(dataframe, groq_api_key):
         {data_sample}
 
         ### INSTRUCTIONS:
-        Provide the analysis in a structured HTML format with clear insights, potential trends, and any relevant statistical information. 
-        Make sure to summarize the findings effectively. Generate the report in HTML format with headings, bullet points, and a conclusion.
+        Provide the analysis in a structured format with clear insights, potential trends, and any relevant statistical information. 
+        Make sure to summarize the findings effectively. Generate the report in format with headings, bullet points, and a conclusion. Any statistical summary should be calculated using {data_summary} only.
         """
     )
 
